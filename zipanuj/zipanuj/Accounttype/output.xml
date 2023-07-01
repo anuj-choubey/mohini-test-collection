@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.9.0b5 on win32)" generated="20230426 12:54:07.056" rpa="false" schemaversion="3">
+<suite id="s1" name="TC42" source="D:\Users\Mohni Lakhera\zipanuj\zipanuj\Accounttype\TC42.robot">
+<test id="s1-t1" name="Searchfield" line="12">
+<kw name="insideSearchfield">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230426 12:54:07.377" level="INFO">Opening browser 'chrome' to base url 'http://localhost:4200/'.</msg>
+<status status="PASS" starttime="20230426 12:54:07.377" endtime="20230426 12:54:11.992"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230426 12:54:11.992" endtime="20230426 12:54:12.135"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>1 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230426 12:54:12.136" endtime="20230426 12:54:12.136"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://button[normalize-space()='Other Login']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230426 12:54:12.137" level="INFO">Clicking button 'xpath://button[normalize-space()='Other Login']'.</msg>
+<status status="PASS" starttime="20230426 12:54:12.136" endtime="20230426 12:54:17.425"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>Xpath://input[@type='text']</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230426 12:54:17.427" level="INFO">Typing text 'utkarsh@mistpl.com' into text field 'Xpath://input[@type='text']'.</msg>
+<status status="PASS" starttime="20230426 12:54:17.425" endtime="20230426 12:54:20.576"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>Xpath://input[@type='password']</arg>
+<arg>${p/w}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230426 12:54:20.577" level="INFO">Typing text 'Svast@1209' into text field 'Xpath://input[@type='password']'.</msg>
+<status status="PASS" starttime="20230426 12:54:20.576" endtime="20230426 12:54:23.750"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://button[normalize-space()='Login']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230426 12:54:23.751" level="INFO">Clicking button 'xpath://button[normalize-space()='Login']'.</msg>
+<status status="PASS" starttime="20230426 12:54:23.750" endtime="20230426 12:54:28.936"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>http://localhost:4200/#/admin/account-type</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230426 12:54:28.939" level="INFO">Opening url 'http://localhost:4200/#/admin/account-type'</msg>
+<status status="PASS" starttime="20230426 12:54:28.938" endtime="20230426 12:54:29.986"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>Xpath://input[@placeholder='Search Name']</arg>
+<arg>AR - WEBSITE</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230426 12:54:29.987" level="INFO">Typing text 'AR - WEBSITE' into text field 'Xpath://input[@placeholder='Search Name']'.</msg>
+<msg timestamp="20230426 12:54:32.108" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230426 12:54:32.108" level="FAIL">Element with locator 'Xpath://input[@placeholder='Search Name']' not found.</msg>
+<status status="FAIL" starttime="20230426 12:54:29.986" endtime="20230426 12:54:32.172"/>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>xpath://input[@placeholder='Search Name']</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230426 12:54:32.172" endtime="20230426 12:54:32.172"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>Xpath://input[@placeholder='Search Name']</arg>
+<arg>DENIAL</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230426 12:54:32.172" endtime="20230426 12:54:32.172"/>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>xpath://input[@placeholder='Search Name']</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230426 12:54:32.172" endtime="20230426 12:54:32.172"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>Xpath://input[@placeholder='Search Name']</arg>
+<arg>Mohni</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230426 12:54:32.173" endtime="20230426 12:54:32.173"/>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>xpath://input[@placeholder='Search Name']</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230426 12:54:32.173" endtime="20230426 12:54:32.173"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:/html/body/app-root</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230426 12:54:32.173" endtime="20230426 12:54:32.173"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230426 12:54:32.173" endtime="20230426 12:54:32.173"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20230426 12:54:32.173" endtime="20230426 12:54:32.173"/>
+</kw>
+<status status="FAIL" starttime="20230426 12:54:07.376" endtime="20230426 12:54:32.173"/>
+</kw>
+<status status="FAIL" starttime="20230426 12:54:07.375" endtime="20230426 12:54:32.174">Element with locator 'Xpath://input[@placeholder='Search Name']' not found.</status>
+</test>
+<status status="FAIL" starttime="20230426 12:54:07.057" endtime="20230426 12:54:32.176"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TC42">TC42</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

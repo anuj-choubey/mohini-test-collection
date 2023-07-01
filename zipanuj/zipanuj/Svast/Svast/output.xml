@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20230501 18:22:56.618" schemaversion="2" generator="Robot 4.1.3 (Python 2.7.14 on win32)">
+<suite source="C:\Users\mohni\PycharmProjects\Svast\Workbench\SAworkbench.robot" id="s1" name="SAworkbench">
+<test id="s1-t1" name="SAworkbench">
+<kw name="InsideSA">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230501 18:22:56.844" level="INFO">Opening browser 'chrome' to base url 'http://localhost:4200/'.</msg>
+<status status="PASS" endtime="20230501 18:22:59.534" starttime="20230501 18:22:56.844"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20230501 18:22:59.666" starttime="20230501 18:22:59.534"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>1 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" endtime="20230501 18:22:59.666" starttime="20230501 18:22:59.666"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://button[normalize-space()='Other Login']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230501 18:22:59.666" level="INFO">Clicking button 'xpath://button[normalize-space()='Other Login']'.</msg>
+<status status="PASS" endtime="20230501 18:23:04.795" starttime="20230501 18:22:59.666"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>Xpath://input[@type='text']</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230501 18:23:04.795" level="INFO">Typing text 'utkarsh@mistpl.com' into text field 'Xpath://input[@type='text']'.</msg>
+<status status="PASS" endtime="20230501 18:23:07.969" starttime="20230501 18:23:04.795"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>Xpath://input[@type='password']</arg>
+<arg>${p/w}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230501 18:23:07.970" level="INFO">Typing text 'Svast@1209' into text field 'Xpath://input[@type='password']'.</msg>
+<status status="PASS" endtime="20230501 18:23:11.135" starttime="20230501 18:23:07.970"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://button[normalize-space()='Login']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230501 18:23:11.135" level="INFO">Clicking button 'xpath://button[normalize-space()='Login']'.</msg>
+<status status="PASS" endtime="20230501 18:23:16.233" starttime="20230501 18:23:11.135"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath://a[normalize-space()='Workbench']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230501 18:23:16.233" level="INFO">Clicking link 'xpath://a[normalize-space()='Workbench']'.</msg>
+<status status="PASS" endtime="20230501 18:23:19.486" starttime="20230501 18:23:16.233"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,13800)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230501 18:23:19.488" level="INFO">Executing JavaScript:
+window.scrollTo(0,13800)
+Without any arguments.</msg>
+<status status="PASS" endtime="20230501 18:23:20.504" starttime="20230501 18:23:19.486"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>Xpath:/html/body/app-root/div/app-work-data/div/div[2]/div[2]/p-paginator/div/button[4]/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230501 18:23:20.505" level="INFO">Clicking element 'Xpath:/html/body/app-root/div/app-work-data/div/div[2]/div[2]/p-paginator/div/button[4]/span'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230501 18:23:23.741" html="true" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20230501 18:23:23.741" starttime="20230501 18:23:22.599"/>
+</kw>
+<msg timestamp="20230501 18:23:23.755" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (1169, 13697)
+  (Session info: chrome=112.0.5615.138)
+</msg>
+<status status="FAIL" endtime="20230501 18:23:23.755" starttime="20230501 18:23:20.504"/>
+</kw>
+<status status="FAIL" endtime="20230501 18:23:23.760" starttime="20230501 18:22:56.844"/>
+</kw>
+<kw name="SAATcolumn">
+<status status="NOT RUN" endtime="20230501 18:23:23.760" starttime="20230501 18:23:23.760"/>
+</kw>
+<kw name="SAUIDcolumn">
+<status status="NOT RUN" endtime="20230501 18:23:23.760" starttime="20230501 18:23:23.760"/>
+</kw>
+<kw name="SAFaccolumn">
+<status status="NOT RUN" endtime="20230501 18:23:23.760" starttime="20230501 18:23:23.760"/>
+</kw>
+<kw name="SACNcolumn">
+<status status="NOT RUN" endtime="20230501 18:23:23.760" starttime="20230501 18:23:23.760"/>
+</kw>
+<kw name="SAVNcolumn">
+<status status="NOT RUN" endtime="20230501 18:23:23.760" starttime="20230501 18:23:23.760"/>
+</kw>
+<kw name="SAANcolumn">
+<status status="NOT RUN" endtime="20230501 18:23:23.760" starttime="20230501 18:23:23.760"/>
+</kw>
+<kw name="SAPNcolumn">
+<status status="NOT RUN" endtime="20230501 18:23:23.760" starttime="20230501 18:23:23.760"/>
+</kw>
+<kw name="SASDcolumn">
+<status status="NOT RUN" endtime="20230501 18:23:23.760" starttime="20230501 18:23:23.760"/>
+</kw>
+<kw name="SABDcolumn">
+<status status="NOT RUN" endtime="20230501 18:23:23.760" starttime="20230501 18:23:23.760"/>
+</kw>
+<kw name="SABalancecolumn">
+<status status="NOT RUN" endtime="20230501 18:23:23.765" starttime="20230501 18:23:23.765"/>
+</kw>
+<kw name="SAcommcolumn">
+<status status="NOT RUN" endtime="20230501 18:23:23.765" starttime="20230501 18:23:23.765"/>
+</kw>
+<kw name="SAStatusName">
+<status status="NOT RUN" endtime="20230501 18:23:23.765" starttime="20230501 18:23:23.765"/>
+</kw>
+<kw name="Substatus">
+<status status="NOT RUN" endtime="20230501 18:23:23.765" starttime="20230501 18:23:23.765"/>
+</kw>
+<kw name="ActionCode">
+<status status="NOT RUN" endtime="20230501 18:23:23.765" starttime="20230501 18:23:23.765"/>
+</kw>
+<kw name="AccountType">
+<status status="NOT RUN" endtime="20230501 18:23:23.765" starttime="20230501 18:23:23.765"/>
+</kw>
+<kw name="FollowUpdate">
+<status status="NOT RUN" endtime="20230501 18:23:23.765" starttime="20230501 18:23:23.765"/>
+</kw>
+<kw name="WorkedDate">
+<status status="NOT RUN" endtime="20230501 18:23:23.765" starttime="20230501 18:23:23.765"/>
+</kw>
+<kw name="Name">
+<status status="NOT RUN" endtime="20230501 18:23:23.765" starttime="20230501 18:23:23.765"/>
+</kw>
+<kw name="ATBDate">
+<status status="NOT RUN" endtime="20230501 18:23:23.765" starttime="20230501 18:23:23.765"/>
+</kw>
+<kw name="AgingDays">
+<status status="NOT RUN" endtime="20230501 18:23:23.765" starttime="20230501 18:23:23.765"/>
+</kw>
+<kw name="AgingBucket">
+<status status="NOT RUN" endtime="20230501 18:23:23.765" starttime="20230501 18:23:23.765"/>
+</kw>
+<kw name="BilledDays">
+<status status="NOT RUN" endtime="20230501 18:23:23.765" starttime="20230501 18:23:23.765"/>
+</kw>
+<kw name="BilledBucket">
+<status status="NOT RUN" endtime="20230501 18:23:23.765" starttime="20230501 18:23:23.765"/>
+</kw>
+<kw name="PMS">
+<status status="NOT RUN" endtime="20230501 18:23:23.765" starttime="20230501 18:23:23.765"/>
+</kw>
+<kw name="UploadedBy">
+<status status="NOT RUN" endtime="20230501 18:23:23.773" starttime="20230501 18:23:23.773"/>
+</kw>
+<status status="FAIL" endtime="20230501 18:23:23.773" starttime="20230501 18:22:56.843">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (1169, 13697)
+  (Session info: chrome=112.0.5615.138)
+</status>
+</test>
+<status status="FAIL" endtime="20230501 18:23:23.777" starttime="20230501 18:22:56.622"/>
+</suite>
+<statistics>
+<total>
+<stat fail="1" skip="0" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" skip="0" id="s1" name="SAworkbench" pass="0">SAworkbench</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
